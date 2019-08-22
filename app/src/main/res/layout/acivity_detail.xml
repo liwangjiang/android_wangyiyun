@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    >
+
+    <!--  头部  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/backsImageViewOnclick"
+            android:padding="15dp"
+            android:src="@drawable/news_title_back"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"
+            android:src="@drawable/news_title_menu"
+            android:id="@+id/news_title_menuId"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/news_title_menuId"
+            android:background="@android:color/black"></View>
+    </RelativeLayout>
+
+    <!-- 底部  -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/buttom"
+        >
+        <!--  该FrameLayout 是用于显示回复和显示跟帖的-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+
+            android:id="@+id/button_outer">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="20dp"
+                android:id="@+id/share_out"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/biz_pc_main_message"
+                    android:id="@+id/replayCount"
+                    android:clickable="true"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="10dp"
+                    android:text="5613"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:src="@drawable/news_article_share_icon"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="30dp"
+                android:text="发送"
+                android:textSize="20sp"
+                android:visibility="gone"
+                android:id="@+id/sendText"/>
+        </RelativeLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/biz_pc_main_tie_icon"
+            android:textColor="@android:color/darker_gray"
+            android:textColorHint="@android:color/darker_gray"
+            android:layout_toLeftOf="@id/button_outer"
+            android:id="@+id/feedback"
+            android:hint="写跟帖"/>
+    </RelativeLayout>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top"
+        android:layout_above="@id/buttom"
+        android:id="@+id/webViewId"
+
+        >
+
+    </WebView>
+</RelativeLayout>

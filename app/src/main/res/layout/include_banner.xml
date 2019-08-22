@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPageId">
+    </android.support.v4.view.ViewPager>
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="16dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/bannerImageTextTitle_id"
+            android:lines="1"
+            android:ellipsize="end"
+            />
+        <!-- 白色标点 -->
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:id="@+id/dost"
+            >
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

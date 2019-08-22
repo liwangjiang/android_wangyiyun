@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">望达新闻</string>
+    <string-array name="tab_title">
+        <item>新闻</item>
+        <item>阅读</item>
+        <item>视屏</item>
+        <item>话题</item>
+        <item>我</item>
+    </string-array>
+    <string-array name="title_name">
+        <item>头条</item>
+        <item>娱乐</item>
+        <item>热点</item>
+        <item>体育</item>
+        <item>本地</item>
+        <item>网易号</item>
+        <item>财经</item>
+        <item>科技</item>
+        <item>汽车</item>
+    </string-array>
+    <!-- 图片自定义标题  轮番图 -->
+    <string-array name="banner_title_arrays">
+        <item>这位37岁的牙买加老将具备夺取世界冠军</item>
+        <item>当奥蒂今晚闪着泪花走出第六届</item>
+        <item>世界田径锦标赛赛场时，她追求了一生的梦想化作了一场噩梦。</item>
+        <item>奥蒂已经赢得过一次百米冠军。</item>
+        <item>可以说，没有任何一个</item>
+    </string-array>
+    <string name="hello">Hello World, JPush!</string>
+    <string name="tag_hint">Tag can be number, alphabet, underscore, Chinese. Use , to split many tags.</string>
+    <string name="alias_hint">Alias can be number, alphabet, underscore, Chinese.</string>
+    <string name="mobilenumber_hint">The phone number can only start with a "+" or a number,other can only contain "-" and Numbers</string>
+    <string name="style_hint">style should be number</string>
+    <string name="error_style_empty">style cannot be empty</string>
+    <string name="error_alias_empty">alias cannot be empty</string>
+    <string name="error_tag_empty">tag cannot be empty</string>
+    <string name="error_tag_gs_empty">Invalid format</string>
+    <string name="mobilenumber_empty_guide">will clear last set phone number</string>
+    <string name="error_network">Failed to init due to network exception.</string>
+    <string name="logining">Running in background. Please see log.</string>
+    <string name="setting_su">Succeed to set</string>
+</resources>

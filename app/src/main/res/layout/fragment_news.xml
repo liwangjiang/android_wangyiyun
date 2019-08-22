@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--头部标签-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_red_dark">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/base_common_default_icon_small"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:id="@+id/right_money"
+                android:text="+5/40"/>
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/right_money"
+            android:id="@+id/imageViewMoney"
+            android:background="@drawable/ic_main_menu_gold"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/imageViewMoney"
+            android:background="@drawable/ic_main_menu_search"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:src="@drawable/biz_news_column_add_subscribe"
+            android:id="@+id/add"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/add"
+            >
+            <!--滑动标签-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/tabs"/>
+        <!--  点击右上角的加号显示隐藏操作 -->
+            <RelativeLayout
+                android:id="@+id/menu_title"
+                android:visibility="gone"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="切换专栏"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@android:color/black"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="排序删除"
+                    android:textColor="@color/title_color"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/title_back_select"
+                    android:id="@+id/deleteButton"
+                    />
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v4.view.ViewPager
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/viewPageId">
+
+        </android.support.v4.view.ViewPager>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            android:id="@+id/menu"
+            android:background="@color/colorMenu"
+            >
+            <!--内容显示-->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+                  <netease.li.com.wangyiyun.util.NoScrollGridView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="15dp"
+                      android:numColumns="4"
+                      android:id="@+id/show"
+                      android:horizontalSpacing="10dp"
+                      android:verticalSpacing="10dp"
+                      >
+                    <!-- android:horizontalSpacing="10dp"水平拮据 -->
+                      <!-- android:verticalSpacing="10dp"垂直拮据 -->
+                  </netease.li.com.wangyiyun.util.NoScrollGridView>
+                  <TextView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="15dp"
+                      android:layout_marginBottom="15dp"
+                      android:text="点击添加更多栏目"
+                      android:background="@android:color/darker_gray"
+                      android:textColor="@android:color/widget_edittext_dark"
+                      />
+                  <netease.li.com.wangyiyun.util.NoScrollGridView
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:numColumns="4"
+                      android:id="@+id/not_show"
+                      android:horizontalSpacing="10dp"
+                      android:verticalSpacing="10dp"
+                      ></netease.li.com.wangyiyun.util.NoScrollGridView>
+
+              </LinearLayout>
+            </ScrollView>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

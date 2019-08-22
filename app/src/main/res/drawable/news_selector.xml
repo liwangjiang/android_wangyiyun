@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 当鼠标按下的时候选中 -->
+    <item android:state_pressed="true" android:drawable="@drawable/biz_navigation_tab_news_selected"></item>
+    <!-- state_selected 状态为true的时候显示 在每个View里面多有一个setSelector(true)方法表示true为选中flase为未选中  -->
+    <item android:state_selected="true" android:drawable="@drawable/biz_navigation_tab_news_selected"></item>
+    <!--默认选项-->
+    <item android:drawable="@drawable/biz_navigation_tab_news"></item>
+</selector>

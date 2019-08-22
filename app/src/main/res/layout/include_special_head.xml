@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scaleType="fitXY"
+        android:id="@+id/include_special_head_image"
+        />
+    <netease.li.com.wangyiyun.util.NoScrollGridView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:horizontalSpacing="20dp"
+        android:verticalSpacing="20dp"
+        android:id="@+id/include_scroll_grid_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        >
+
+    </netease.li.com.wangyiyun.util.NoScrollGridView>
+</LinearLayout>
